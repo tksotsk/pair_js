@@ -51,12 +51,17 @@ $(document).ready(function () {
     // 変数「number」に入力した教科の数を代入します。
     let number = subject_points.length;
     // 変数「judge」に"合格"を代入しておきます。
+
     let judge = "合格";
-    for (let i = 0; i < number; i++){
-      if (subject_points[i] < 60) {
+
+
+    for (let i=0;i<number;i++){
+
+      if (subject_points[i]<60){
         judge = "不合格";
         break;
       }
+
     }
     // 入力したそれぞれの教科のうち、1つでも60点よりも低い点数があった場合、変数「judge」に"不合格"を再代入する処理を記述する。
     // ヒント：配列の繰り返し処理について調べてみましょう。
